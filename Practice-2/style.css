@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+     grid-template-rows: 1fr 4.5fr 4.5fr;
+     grid-template-areas: "header header header"  "herodiv herodiv herodiv" "bottom-left bottom-center bottom-right";
+     gap:10px;
+     padding:10px;
+}
+
+.start{
+    display: flex;
+    padding: 5px 10px;
+}
+
+.start i{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.start h1{
+    font-size: 25px;
+}
+
+.middle input{
+    width: 100%;
+}
+
+.middle i{
+    background-color: white;
+    padding: 5px 5px;
+    border-radius: 10px;
+}
+
+header{
+    background-color: rgba(214, 95, 95, 0.742);
+    grid-area: header;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.herodiv{
+    background-color: rgb(104, 104, 164);
+    grid-area: herodiv;
+    border-radius: 10px;
+}
+
+.bottom-left{
+    background-color: lightseagreen;
+    grid-area: bottom-left;
+    border-radius: 10px;
+}
+
+.bottom-center{
+    background-color: skyblue;
+    grid-area: bottom-center;
+    border-radius: 10px;
+}
+
+.bottom-right{
+    background-color: lightcoral;
+    grid-area: bottom-right;
+    border-radius: 10px;
+}
